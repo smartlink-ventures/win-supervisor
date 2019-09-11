@@ -16,7 +16,7 @@ type Program struct {
 
 func getConfigPath() string {
 	rootDir := os.Getenv("SYSTEMDRIVE") + "\\"
-	fullPath := fmt.Sprintf("%s\\winsupervisor.conf", rootDir)
+	fullPath := fmt.Sprintf("%swinsupervisor\\winsupervisor.conf", rootDir)
 	return fullPath
 }
 
