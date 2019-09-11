@@ -23,7 +23,7 @@ func usage(errmsg string) {
 }
 
 func main() {
-	const svcName = "winwatcher"
+	const svcName = "win-supervisor"
 
 	isInteractiveSession, err := svc.IsAnInteractiveSession()
 	if err != nil {
@@ -44,7 +44,7 @@ func main() {
 		runService(svcName, true)
 		return
 	case "install":
-		err = installService(svcName, "Win-Watcher")
+		err = installService(svcName, "Win-Supervisor")
 	case "remove":
 		err = removeService(svcName)
 	case "start":
